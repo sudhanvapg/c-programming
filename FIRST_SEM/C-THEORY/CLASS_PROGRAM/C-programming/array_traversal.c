@@ -1,12 +1,25 @@
 #include<stdio.h>
 int read_array_size();
-int validate_array_size(arraysize);
+int isvalidate_array_size(arraysize);
 
 int main()
 {
-    int arraysize=read_array_size();  //calling method & stores returned value
-    int isvalid=validate_array_size(arraysize);  //passing 'arraysize';int array_size=arraysize
-    if (isvalid == 0){
+    int isvalid=1 
+    int arraysize;
+    int myarray[];       //int arraysize=read_array_size();  //calling method & stores returned value
+            //int isvalid= validate_array_size(arraysize);  //passing 'arraysize';int array_size=arraysize
+    while (isvalid==1)
+    {
+        int arraysize=read_array_size();
+        int validated=validate_array_size(arraysize);
+        if (volatile == 1){
+
+            break;
+        }        //if arraysize=read_array_size()l;
+         printf("pls try again..");
+    }
+    int myarray[arraysize];
+    for(int i=0;i<=arraysize;i++){
 
     }
    
@@ -23,5 +36,4 @@ int validate_array_size(int array_size){
     if(array_size >4){
         return 1;
     }
-    return 0;
-
+    return 0; 
